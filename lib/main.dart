@@ -4,13 +4,19 @@ void main() {
   runApp(MyApp());
 }
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('Hello'),
+    return MaterialApp(
+      home: Material(
+        child: Center(
+          child: Container(
+            child: Text('Welcome to 30 Days of Flutter'),
+          ),
+        ),
+      ),
     );
   }
 }
